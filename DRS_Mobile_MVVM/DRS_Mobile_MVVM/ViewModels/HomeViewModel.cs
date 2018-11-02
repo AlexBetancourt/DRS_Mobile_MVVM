@@ -12,21 +12,22 @@ using System.Windows.Input;
 using Xamarin.Forms.Internals;
 using Xamarin.Forms.Navigation;
 using System.Collections.ObjectModel;
+using DRS_Mobile.Models;
 
 namespace DRS_Mobile_MVVM.ViewModels
 {
     public class HomeViewModel : BaseViewModel, IHomeViewModel
     {
-        private IRepository<TodoItem> _iTodoItemRepository;
+        private IRepository<Mech> _iMechItemRepository;
 
-        private ObservableCollection<TodoItem> _todoItems;
-        public ObservableCollection<TodoItem> TodoItems
+        private ObservableCollection<Mech> _MechItems;
+        public ObservableCollection<Mech> MechItems
         {
-            get { return _todoItems; }
+            get { return _MechItems; }
             set
             {
-                _todoItems = value;
-                OnPropertyChanged(nameof(TodoItems));
+                _MechItems = value;
+                OnPropertyChanged(nameof(MechItems));
             }
         }
 
@@ -34,28 +35,28 @@ namespace DRS_Mobile_MVVM.ViewModels
         public ICommand SelectedItemCommand { get; set; }
 
         [Preserve]
-        public HomeViewModel(IRepository<TodoItem> _iTodoItemRepository,
+        public HomeViewModel(IRepository<Mech> _iMechItemRepository,
             INavigationService _iNavigationService)
         {
             this._iNavigationService = _iNavigationService;
-            this._iTodoItemRepository = _iTodoItemRepository;
+            this._iMechItemRepository = _iMechItemRepository;
 
             AddCommand = new Command(Add);
-            SelectedItemCommand = new Command<TodoItem>(SelectedItem);
+            SelectedItemCommand = new Command<Mech>(SelectedItem);
 
             MessagingCenter.Subscribe<string>(this, "HomeViewLoadedMessage", InitData);
         }
 
         private async void InitData(string message)
         {
-            var result = await _iTodoItemRepository.Get();
+            var result = await _iMechItemRepository.Get();
             if (result != null && result.Count > 0)
             {
-                TodoItems = new ObservableCollection<TodoItem>(result);
+                MechItems = new ObservableCollection<Mech>(result);
             }
             else
             {
-                TodoItems = new ObservableCollection<TodoItem>();
+                MechItems = new ObservableCollection<Mech>();
             }
         }
 
@@ -64,10 +65,10 @@ namespace DRS_Mobile_MVVM.ViewModels
             await _iNavigationService.NavigateTo("DetailsView", null);
         }
 
-        private async void SelectedItem(TodoItem param)
+        private async void SelectedItem(Mech param)
         {
             var navigationParams = new NavigationParameters();
-            navigationParams.Add(nameof(TodoItem), param);
+            navigationParams.Add(nameof(Mech), param);
             await _iNavigationService.NavigateTo("DetailsView", navigationParams);
         }
     }

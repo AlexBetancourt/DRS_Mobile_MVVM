@@ -13,6 +13,7 @@ using DRS_Mobile_MVVM.Repositories;
 using Xamarin.Forms.Popups;
 using Xamarin.Forms.Internals;
 using Xamarin.Forms.Navigation;
+using DRS_Mobile.Models;
 
 namespace DRS_Mobile_MVVM.ViewModels
 {
@@ -31,7 +32,7 @@ namespace DRS_Mobile_MVVM.ViewModels
             builder.RegisterType<UserServices>().As<IUserServices>().SingleInstance();
             builder.RegisterType<PopupsService>().As<IPopupsService>().SingleInstance();
             builder.RegisterType<NavigationService>().As<INavigationService>().SingleInstance();
-            builder.RegisterType<Repository<TodoItem>>().As<IRepository<TodoItem>>().SingleInstance();
+            builder.RegisterType<Repository<Mech>>().As<IRepository<Mech>>().SingleInstance();
 
             _container = builder.Build();
         }

@@ -12,21 +12,22 @@ using Xamarin.Forms.Popups;
 using System.Windows.Input;
 using Xamarin.Forms.Internals;
 using Xamarin.Forms.Navigation;
+using DRS_Mobile.Models;
 
 namespace DRS_Mobile_MVVM.ViewModels
 {
     public class DetailsViewModel : BaseViewModel, IDetailsViewModel
     {
-        private IRepository<TodoItem> _iTodoItemRepository;
+        private IRepository<Mech> _iMechItemRepository;
 
-        private TodoItem _currentTodoItem;
-        public TodoItem CurrentTodoItem
+        private Mech _currentMechItem;
+        public Mech CurrentMechItem
         {
-            get { return _currentTodoItem; }
+            get { return _currentMechItem; }
             set
             {
-                _currentTodoItem = value;
-                OnPropertyChanged(nameof(CurrentTodoItem));
+                _currentMechItem = value;
+                OnPropertyChanged(nameof(CurrentMechItem));
             }
         }
 
@@ -46,13 +47,13 @@ namespace DRS_Mobile_MVVM.ViewModels
         public ICommand DeleteCommand { get; set; }
 
         [Preserve]
-        public DetailsViewModel(IRepository<TodoItem> _iTodoItemRepository,
+        public DetailsViewModel(IRepository<Mech> _iMechItemRepository,
             IPopupsService _iPopupsService,
             INavigationService _iNavigationService)
         {
             this._iPopupsService = _iPopupsService;
             this._iNavigationService = _iNavigationService;
-            this._iTodoItemRepository = _iTodoItemRepository;
+            this._iMechItemRepository = _iMechItemRepository;
 
             SaveCommand = new Command(Save);
             DeleteCommand = new Command(Delete);
@@ -64,31 +65,31 @@ namespace DRS_Mobile_MVVM.ViewModels
         {
             if (_iNavigationService.GetParameters() != null)
             {
-                CurrentTodoItem = _iNavigationService.GetParameters().GetValue<TodoItem>(nameof(TodoItem));
+                CurrentMechItem = _iNavigationService.GetParameters().GetValue<Mech>(nameof(Mech));
                 IsDeleteVisible = true;
                 return;
             }
 
             IsDeleteVisible = false;
-            CurrentTodoItem = new TodoItem();
+            CurrentMechItem = new Mech();
         }
 
         private async void Save()
         {
             if (IsDeleteVisible)
             {
-                await _iTodoItemRepository.Update(CurrentTodoItem);
+                await _iMechItemRepository.Update(CurrentMechItem);
             }
             else
             {
-                await _iTodoItemRepository.Insert(CurrentTodoItem);
+                await _iMechItemRepository.Insert(CurrentMechItem);
             }
             await _iNavigationService.GoBack();
         }
 
         private async void Delete()
         {
-            await _iTodoItemRepository.Delete(CurrentTodoItem);
+            await _iMechItemRepository.Delete(CurrentMechItem);
             await _iNavigationService.GoBack();
         }
     }

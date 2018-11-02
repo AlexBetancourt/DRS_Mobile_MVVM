@@ -57,7 +57,7 @@
 
             </ControlTemplate>
 
-            <DataTemplate x:Key="ToDoItemTemplate">
+            <DataTemplate x:Key="MechItemTemplate">
                 
                 <ViewCell>
                     

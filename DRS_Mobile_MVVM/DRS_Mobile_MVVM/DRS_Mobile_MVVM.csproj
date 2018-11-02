@@ -73,13 +73,39 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="AppResources\Localization\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Components.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
     <None Update="Views\DetailsView.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
+    <None Update="Views\HeatData.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
     <None Update="Views\HomeView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\LanceComposition.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\MechDiagram.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\WarriorNMech.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\WeaponsNEquip.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
   </ItemGroup>

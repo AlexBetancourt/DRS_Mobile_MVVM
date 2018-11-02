@@ -131,4 +131,352 @@
       <Name>DRS_Mobile_MVVM</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Annihilator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Archer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Assassin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Atlas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Awesome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Banshee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Battleaxe.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Battlemaster.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Black Knight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Blackjack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Bombardier.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Bowman.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Cataphract.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Catapult.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Centurion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Chameleon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Champion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Charger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Cicada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Clint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Cobra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Commando.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Cossack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Crab.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Crockett.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Cronus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Crossbow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Crusader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Cyclops.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Dart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Dervish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Devastator.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Dragon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Eisenfaust.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Emperor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Enforcer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Exterminator.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Falcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Firefly.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Firestarter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flashman.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Gladiator.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Goliath.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Grand Dragon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Grand Panther.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Grasshopper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Griffin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Guillotine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Hammerhands.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Hatamoto-Chi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Hatchetman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Hermes II.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Hermes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Highlander.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Hoplite.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Hornet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Hunchback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Hussar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icarus II.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Imp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Jagermech.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Javelin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Jenner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\King Crab.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Kintaro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Koschei.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Lancelot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Lineholder.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Locust.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Longbow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Lynx.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Mackie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Marauder II.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Marauder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Mercury.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Merlin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Mongoose.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Orion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Ostroc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Ostscout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Ostsol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Panther.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Phoenix Hawk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Phoenix.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Pillager.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Quickdraw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Rampage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Raven.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Rifleman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Rook.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Scorpion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Sentinel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Shadow Hawk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Spider.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Stalker.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Stinger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Striker.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Tempest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Thorn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Thug.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Thunderbolt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Titan.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Trebuchet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Urbanmech.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Victor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Vindicator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Vulcan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Warhammer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Wasp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Whitworth.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Wolfhound.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Wolverine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Wyvern.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Ymir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Zeus.png" />
+  </ItemGroup>
 </Project>

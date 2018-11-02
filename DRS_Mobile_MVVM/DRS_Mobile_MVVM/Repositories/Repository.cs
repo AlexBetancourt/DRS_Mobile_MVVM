@@ -20,7 +20,7 @@ namespace DRS_Mobile_MVVM.Repositories
 
         public Repository()
         {
-            var dbPath = DependencyService.Get<IFileHelper>().GetLocalFilePath("TodoSQLite.db3");
+            var dbPath = DependencyService.Get<IFileHelper>().GetLocalFilePath("MechDB.db3");
             db = new SQLiteAsyncConnection(dbPath);
             db.CreateTableAsync<T>().Wait();
         }

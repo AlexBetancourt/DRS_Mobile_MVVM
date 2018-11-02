@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="COPYRIGHT_TEXT" xml:space="preserve">
-    <value>Copyright © Mohamed Ali NOUIRA. All rights reserved.</value>
+    <value>Copyright 2018 © Mexkal Games. All rights reserved.</value>
   </data>
   <data name="DETAILS_TITLE" xml:space="preserve">
     <value>Details</value>
@@ -135,10 +135,10 @@
   <data name="TXT_NAME" xml:space="preserve">
     <value>Name</value>
   </data>
-  <data name="TXT_NOTES" xml:space="preserve">
-    <value>Notes</value>
-  </data>
   <data name="TXT_SAVE" xml:space="preserve">
     <value>Save</value>
+  </data>
+  <data name="TXT_VARIANT" xml:space="preserve">
+    <value>Variant</value>
   </data>
 </root>

@@ -6,8 +6,8 @@
 
 using System.IO;
 using Xamarin.Forms;
-using SQLite.Helpers;
 using DRS_Mobile_MVVM.Android.Helpers;
+using DRS_Mobile_MVVM.Helpers;
 
 [assembly: Dependency(typeof(FileHelper))]
 namespace DRS_Mobile_MVVM.Android.Helpers

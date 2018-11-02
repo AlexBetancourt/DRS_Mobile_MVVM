@@ -14,8 +14,8 @@
 
             <ListView VerticalOptions="CenterAndExpand"
                       HorizontalOptions="CenterAndExpand"
-                      ItemsSource="{Binding Path=TodoItems}"
-                      ItemTemplate="{StaticResource ToDoItemTemplate}">
+                      ItemsSource="{Binding Path=MechItems}"
+                      ItemTemplate="{StaticResource MechItemTemplate}">
 
                 <ListView.Behaviors>
 

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DRS_Mobile.LanceComposition" BackgroundColor="Maroon"  Disappearing="ContentPage_Disappearing" Appearing="ContentPage_Appearing">
+    <ContentPage.Content>
+        <StackLayout>
+            <!--Label Text="Lance Name:" BackgroundColor="White" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" /-->
+            <Entry x:Name="txtLance" Text="Joren's Vindicators" TextColor="White" FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" />
+            <ListView x:Name="lstLanceMechs" BindingContextChanged="lstLanceMechs_BindingContextChanged">
+                <ListView.ItemTemplate>
+                    <DataTemplate >
+                        <ImageCell Text="{Binding Name}" TextColor="White" Detail="{Binding ID}"  ImageSource="{Binding Name}" ></ImageCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button x:Name="cmdSelect" Text="Select" Pressed="cmdSelect_Pressed" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

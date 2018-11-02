@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DRS_Mobile.WarriorNMech" Title="Internals">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView>
+            <AbsoluteLayout BackgroundColor="Maroon">
+                <Image x:Name="imgMech" Aspect="AspectFit" BackgroundColor="Maroon" AbsoluteLayout.LayoutBounds="0.5,0,200,200" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                <Label x:Name="lblMech" Text=" CMD-1B Commando" FontAttributes="Bold" FontSize="26" TextColor="DarkGray" HorizontalTextAlignment="Center" AbsoluteLayout.LayoutBounds="0.5,140,1,40" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
+                <Entry x:Name="txtMechName" TextChanged="TxtMechName_TextChanged" Text="Joren's Avengers" TextColor="White" BackgroundColor="Maroon" AbsoluteLayout.LayoutBounds="0.5,180,1,50" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
+                <AbsoluteLayout BackgroundColor="White" AbsoluteLayout.LayoutBounds="0, 220, 1, 50" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional">
+                    <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,0,0.3,1" AbsoluteLayout.LayoutFlags="WidthProportional,HeightProportional">
+                        <Button BackgroundColor="Green" Pressed="Button_Pressed" BorderRadius="20" AbsoluteLayout.LayoutBounds="5,0.5,40,40" AbsoluteLayout.LayoutFlags="YProportional" />
+                        <Label Text="Walk: 4" FontAttributes="Bold" TextColor="Black" AbsoluteLayout.LayoutBounds="50,0.55,1,25" AbsoluteLayout.LayoutFlags="YProportional,WidthProportional" />
+                    </AbsoluteLayout>
+                    <AbsoluteLayout AbsoluteLayout.LayoutBounds="0.5,0,0.3,1" AbsoluteLayout.LayoutFlags="WidthProportional,HeightProportional,XProportional">
+                        <Button BackgroundColor="Maroon" BorderRadius="20" AbsoluteLayout.LayoutBounds="5,0.5,40,40" AbsoluteLayout.LayoutFlags="YProportional" />
+                        <Label Text="Run: 6" FontAttributes="Bold" TextColor="Black" AbsoluteLayout.LayoutBounds="50,0.55,1,25" AbsoluteLayout.LayoutFlags="YProportional,WidthProportional" />
+                    </AbsoluteLayout>
+                    <AbsoluteLayout AbsoluteLayout.LayoutBounds="1,0,0.3,1" AbsoluteLayout.LayoutFlags="WidthProportional,HeightProportional,XProportional">
+                        <Button BackgroundColor="DarkGray" BorderRadius="20" AbsoluteLayout.LayoutBounds="5,0.5,40,40" AbsoluteLayout.LayoutFlags="YProportional" />
+                        <Label Text="Jump: 4" FontAttributes="Bold" TextColor="Black" AbsoluteLayout.LayoutBounds="50,0.55,1,25" AbsoluteLayout.LayoutFlags="YProportional,WidthProportional" />
+                    </AbsoluteLayout>
+                </AbsoluteLayout>
+                <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,270,1,50" AbsoluteLayout.LayoutFlags="WidthProportional" Padding="5,0,0,0">
+                    <Label Text="Tonnage:" TextColor="White" AbsoluteLayout.LayoutBounds="0,25,0.25,50" AbsoluteLayout.LayoutFlags="WidthProportional" />
+                    <Entry Text="50" Keyboard="Numeric" TextColor="White" BackgroundColor="Maroon" AbsoluteLayout.LayoutBounds="1,10,0.75,50" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
+                </AbsoluteLayout>
+                <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,320,1,50" AbsoluteLayout.LayoutFlags="WidthProportional" Padding="5,0,0,0">
+                    <Label Text="Heat Sinks:" TextColor="White" AbsoluteLayout.LayoutBounds="0,25,0.25,50" AbsoluteLayout.LayoutFlags="WidthProportional" />
+                    <Stepper Minimum="0" Maximum="13" Increment="1" x:Name="spHeatSinks" ValueChanged="spHeatSinks_ValueChanged" AbsoluteLayout.LayoutBounds="1,10,0.75,50" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional"/>
+                    <Entry x:Name="txtHeatSinks" Keyboard="Numeric" Text="0" TextColor="White" BackgroundColor="Maroon" AbsoluteLayout.LayoutBounds="3,10,0.75,50" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
+                </AbsoluteLayout>
+                <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,370,1,50" AbsoluteLayout.LayoutFlags="WidthProportional" Padding="5,0,0,0">
+                    <Label Text="Pilot:" TextColor="White" AbsoluteLayout.LayoutBounds="0,25,0.25,50" AbsoluteLayout.LayoutFlags="WidthProportional" />
+                    <Entry Text="Joren Matsuda" TextColor="White" BackgroundColor="Maroon" AbsoluteLayout.LayoutBounds="1,10,0.75,50" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
+                </AbsoluteLayout>
+                <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,420,1,50" AbsoluteLayout.LayoutFlags="WidthProportional" Padding="5,0,0,0">
+                    <Label Text="Gunnery Skill:" TextColor="White" AbsoluteLayout.LayoutBounds="0,25,0.25,50" AbsoluteLayout.LayoutFlags="WidthProportional" />
+                    <Entry Text="3" TextColor="White" Keyboard="Numeric" BackgroundColor="Maroon" AbsoluteLayout.LayoutBounds="1,10,0.75,50" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
+                </AbsoluteLayout>
+                <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,470,1,50" AbsoluteLayout.LayoutFlags="WidthProportional" Padding="5,0,0,0">
+                    <Label Text="Piloting Skill:" TextColor="White" AbsoluteLayout.LayoutBounds="0,25,.25,50" AbsoluteLayout.LayoutFlags="WidthProportional" />
+                    <Entry Text="4" TextColor="White" Keyboard="Numeric" BackgroundColor="Maroon" AbsoluteLayout.LayoutBounds="1,10,0.75,50" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
+                </AbsoluteLayout>
+                <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,520,1,50" AbsoluteLayout.LayoutFlags="WidthProportional" Padding="5,0,0,0">
+                    <Label  Text="Hits:" TextColor="White" AbsoluteLayout.LayoutBounds="0,25,.25,50" AbsoluteLayout.LayoutFlags="WidthProportional" />
+                    <Stepper Minimum="0" Maximum="6" Increment="1" x:Name="spHits" ValueChanged="sliHits_ValueChanged" AbsoluteLayout.LayoutBounds="1,10,0.75,50" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional"/>
+                    <Entry x:Name="txtHits" Text="0" Keyboard="Numeric" TextColor="White" BackgroundColor="Maroon" AbsoluteLayout.LayoutBounds="3,10,0.75,50" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
+                </AbsoluteLayout>
+                <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,570,1,50" AbsoluteLayout.LayoutFlags="WidthProportional" Padding="5,0,0,0">
+                    <Label Text="Consciousness:" TextColor="White" AbsoluteLayout.LayoutBounds="0,25,.25,50" AbsoluteLayout.LayoutFlags="WidthProportional" />
+                    <Entry x:Name="txtCouns" Text="0" Keyboard="Numeric" TextColor="White" BackgroundColor="Maroon" AbsoluteLayout.LayoutBounds="1,10,0.75,50" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
+                </AbsoluteLayout>
+
+            </AbsoluteLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

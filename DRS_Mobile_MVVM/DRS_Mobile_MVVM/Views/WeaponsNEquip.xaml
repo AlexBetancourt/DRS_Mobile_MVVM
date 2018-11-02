@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DRS_Mobile.WeaponsNEquip" Title="Weapons"  >
+    <ContentPage.Content>
+        <ScrollView>
+            <AbsoluteLayout >
+                <BoxView  />
+                <Label Text="Name:" AbsoluteLayout.LayoutBounds="0.1,0.10,AutoSize,AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                <Editor x:Name="txtName" AbsoluteLayout.LayoutBounds="0.25,0.080,2,1" AbsoluteLayout.LayoutFlags="PositionProportional" />
+                <!--<Label Text="Gunnery Skill:" AbsoluteLayout.LayoutBounds="0.25,0.10,AutoSize,AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                <Editor x:Name="txtGS" AbsoluteLayout.LayoutBounds="0.25,0.10,AutoSize,AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                <Label Text="Piloting Skill:" AbsoluteLayout.LayoutBounds="0.25,0.10,AutoSize,AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                <Editor x:Name="txtPS" AbsoluteLayout.LayoutBounds="0.25,0.10,AutoSize,AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"/>-->
+            </AbsoluteLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
