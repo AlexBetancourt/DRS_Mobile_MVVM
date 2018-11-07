@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 using Plugin.TextToSpeech;
-using Plugin.TextToSpeech.Abstractions;
-using DRS_Mobile.Data;
 using DRS_Mobile.Models;
+
 namespace DRS_Mobile
 {
 
@@ -237,7 +233,7 @@ namespace DRS_Mobile
             pilot.BirthYear =2981;
             //mech.MechPilot = pilot;
 
-            App.MechData.SaveItemAsync(mech);
+            //App.MechData.SaveItemAsync(mech);
 
         }
 

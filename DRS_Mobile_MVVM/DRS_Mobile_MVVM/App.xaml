@@ -63,10 +63,10 @@
                     
                     <StackLayout Margin="12,0,12,0"
                                  Orientation="Horizontal"
-                                 BackgroundColor="#7E1335"
+                                 BackgroundColor="Gray"
                                  HorizontalOptions="FillAndExpand">
 
-                        <Label TextColor="White"
+                        <Label TextColor="White" 
                                VerticalTextAlignment="Center"
                                HorizontalOptions="StartAndExpand"
                                Text="{Binding Path=Name ,Mode=TwoWay}"/>
